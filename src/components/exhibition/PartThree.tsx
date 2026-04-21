@@ -2,6 +2,9 @@ import lethoImg from "@/assets/le-duc-tho.jpg";
 import xuanthuyImg from "@/assets/xuan-thuy.jpg";
 import madameImg from "@/assets/madame-binh.jpg";
 import kissingerImg from "@/assets/henry_kissinger.jpg";
+import tetImg from "@/assets/tet-offensive.jpg";
+import muadoImg from "@/assets/mua-do-7.jpg";
+import thanhCoQuangTri1972 from "@/assets/Thành_cổ_Quảng_Trị_4.jpg"
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
 
@@ -60,9 +63,6 @@ export function PartThree() {
       {/* 3.2 Persistence & flexibility */}
       <div className="bg-surface-container py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <SectionLabel number="05" label="Bản lĩnh ngoại giao" />
-          </Reveal>
           <Reveal delay={120}>
             <h3 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
               Dĩ bất biến,<br />
@@ -171,9 +171,6 @@ export function PartThree() {
       {/* 3.4 Key players */}
       <div className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <SectionLabel number="06" label="Những nhân vật tiêu biểu" />
-          </Reveal>
           <Reveal delay={120}>
             <h3 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
               Bộ ba <span className="italic gradient-gold-text">đại diện chính nghĩa</span>
@@ -222,6 +219,74 @@ export function PartThree() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* 3.5 Thực lực chiến trường */}
+      <div className="bg-surface-container py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal delay={100}>
+            <h3 className="text-display mt-8 text-[clamp(2.1rem,6vw,4.4rem)] ink-text">
+              THỰC LỰC CHIẾN TRƯỜNG:<br />
+              <span className="gradient-gold-text">MỎ NEO CỦA NGOẠI GIAO</span>
+            </h3>
+          </Reveal>
+
+          <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
+            <Reveal delay={140}>
+              <div className="relative overflow-hidden bg-surface-bright shadow-ambient">
+                <img
+                  src={thanhCoQuangTri1972}
+                  alt="Thành cổ Quảng Trị 1972"
+                  className="gold-spine aspect-[4/5] w-full object-cover"
+                  loading="lazy"
+                  width={1280}
+                  height={896}
+                />
+              </div>
+            </Reveal>
+
+            <Reveal delay={260}>
+              <div className="h-full space-y-6">
+                <div className="overflow-hidden border border-tertiary/30 shadow-ambient">
+                  <img
+                    src={muadoImg}
+                    alt="Mùa đỏ lửa tại Thành cổ Quảng Trị"
+                    className="aspect-[4/3] w-full object-cover"
+                    loading="lazy"
+                    width={1280}
+                    height={896}
+                  />
+                </div>
+                <div>
+                  <h4 className="text-headline text-3xl ink-text md:text-4xl">
+                    81 Ngày Đêm Thành Cổ - Bản Hùng Ca Tạo Thế
+                  </h4>
+                  <p className="mt-4 leading-relaxed ink-soft">
+                    Cuộc chiến đấu bảo vệ Thành cổ (28/06 - 16/09/1972) là minh chứng cho ý chí sắt đá.
+                    Dù chênh lệch cực lớn về quân số và vũ khí, ta vẫn kiên cường bám trụ từng tấc đất.
+                  </p>
+                </div>
+                <div className="bg-primary p-6 text-primary-foreground shadow-ambient">
+                  <p className="mt-3 leading-relaxed">
+                    Thắng lợi tại đây là thực lực cốt lõi, buộc đối phương phải ký kết Hiệp định Paris khi nhận ra
+                    không thể khuất phục Việt Nam bằng sức mạnh quân sự.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={380}>
+            <div className="mt-16 bg-ink p-8 text-primary-foreground shadow-ambient">
+              <p className="text-headline text-2xl italic md:text-3xl">
+                "Thực lực là cái chiêng, ngoại giao là cái tiếng"
+              </p>
+              <p className="mt-4 leading-relaxed opacity-90">
+                Quảng Trị chính là phần thân chắc tạo thế đứng vững vàng cho các nhà ngoại giao Việt Nam đấu trí với siêu cường.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

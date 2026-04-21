@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import logoDcs from "@/assets/logo_DCS.jpg";
 
 function NotFoundComponent() {
   return (
@@ -29,17 +30,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
+      { title: "Hiệp định Paris 1969-1973" },
+      { name: "description", content: "Projected Group 4 - VNR202 - FPTU HCMC" },
+      { name: "author", content: "Hiệp định Paris 1969-1973" },
+      { property: "og:title", content: "Hiệp định Paris 1969-1973" },
       { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "Hiệp định Paris 1969-1973" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: logoDcs },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

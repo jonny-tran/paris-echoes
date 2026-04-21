@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { House, Landmark, ScrollText, Swords, UserRound } from "lucide-react";
+import { Bot, House, Landmark, ScrollText, Swords, UserRound } from "lucide-react";
 import { useEffect, useState } from "react";
 
 type SectionItem = {
@@ -14,6 +14,7 @@ const sections: SectionItem[] = [
   { id: "part-3", label: "Chiến lược Việt Nam", icon: Swords },
   { id: "part-5", label: "Madame Bình", icon: UserRound },
   { id: "part-4", label: "Ý nghĩa lịch sử", icon: ScrollText },
+  { id: "part-6", label: "Công nghệ", icon: Bot },
 ];
 
 export function SideNav() {

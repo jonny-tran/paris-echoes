@@ -30,9 +30,6 @@ export function PartOne() {
 
         {/* Content */}
         <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center">
-          <Reveal>
-            <span className="label-archival">Triển lãm số · Lưu trữ Ngoại giao</span>
-          </Reveal>
           <Reveal delay={150}>
             <h1 className="text-display mt-8 text-[clamp(3rem,9vw,7.5rem)] ink-text">
               HIỆP ĐỊNH
@@ -55,10 +52,18 @@ export function PartOne() {
           <Reveal delay={650}>
             <a
               href="#part-1-grid"
-              className="group mt-20 inline-flex flex-col items-center gap-3 label-archival font-sans transition-colors hover:text-primary"
+              aria-label="Cuộn xuống phần nội dung tiếp theo"
+              className="group mt-20 inline-flex flex-col items-center gap-2 text-tertiary/85 transition-all duration-500 hover:text-primary"
             >
-              <span>Cuộn để khám phá câu trả lời</span>
-              <span className="block h-12 w-px bg-gradient-to-b from-tertiary to-transparent group-hover:from-primary" />
+              <span
+                className="block h-10 w-px bg-gradient-to-b from-tertiary/70 via-tertiary/40 to-transparent transition-colors duration-500 group-hover:from-primary/90"
+                aria-hidden="true"
+              />
+              <span className="relative h-8 w-8" aria-hidden="true">
+                <span className="absolute inset-0 rounded-full bg-primary/10 opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-100" />
+                <span className="absolute left-1/2 top-[34%] h-3 w-3 -translate-x-1/2 rotate-45 border-b-[3px] border-r-[3px] border-current opacity-95 animate-pulse [animation-duration:1.3s]" />
+                <span className="absolute left-1/2 top-[58%] h-3 w-3 -translate-x-1/2 rotate-45 border-b-[3px] border-r-[3px] border-current opacity-60 animate-pulse [animation-duration:1.3s] [animation-delay:0.25s]" />
+              </span>
             </a>
           </Reveal>
         </div>
@@ -67,9 +72,7 @@ export function PartOne() {
       {/* ===== Block 2: Info Grid ===== */}
       <div id="part-1-grid" className="bg-surface-low py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6">
-          <Reveal>
-            <SectionLabel number="01" label="Bối cảnh & Các bên" />
-          </Reveal>
+
           <Reveal delay={120}>
             <h2 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
               Bốn bên — Một bàn đàm phán
@@ -92,12 +95,14 @@ export function PartOne() {
 
             {/* Goal block */}
             <Reveal delay={120}>
-              <div className="relative overflow-hidden bg-primary p-10 text-primary-foreground shadow-ambient hover-lift">
-                <span className="label-archival !text-tertiary-container">Mục tiêu</span>
-                <h3 className="text-headline mt-6 text-4xl md:text-5xl">
+              <div className="group relative overflow-hidden bg-primary p-10 text-primary-foreground shadow-ambient hover-lift">
+                <span className="label-archival !text-tertiary-container transition-colors duration-300 group-hover:!text-tertiary">
+                  Mục tiêu
+                </span>
+                <h3 className="text-headline mt-6 text-4xl transition-colors duration-300 group-hover:text-primary md:text-5xl">
                   Chấm dứt chiến tranh,<br />lập lại hòa bình
                 </h3>
-                <p className="mt-6 max-w-md italic opacity-85">
+                <p className="mt-6 max-w-md italic opacity-85 transition-colors duration-300 group-hover:text-ink-soft">
                   Giành lại độc lập, chủ quyền và toàn vẹn lãnh thổ cho dân tộc Việt Nam.
                 </p>
                 <div className="absolute -right-12 -bottom-12 h-48 w-48 rounded-full bg-primary-glow/30 blur-3xl" />
@@ -111,10 +116,10 @@ export function PartOne() {
               <span className="label-archival">Bốn thành phần tham gia</span>
               <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
                 {[
-                  { side: "Việt Nam DCCH", lead: "Xuân Thuỷ", color: "primary" },
-                  { side: "CPCMLT miền Nam", lead: "Nguyễn Thị Bình", color: "primary" },
-                  { side: "Hoa Kỳ", lead: "Henry Kissinger", color: "neutral" },
-                  { side: "Chính quyền Sài Gòn", lead: "Nguyễn Cao Kỳ", color: "neutral" },
+                  { side: "Việt Nam DCCH", lead: "Đại diện bởi Bộ trưởng Nguyễn Duy Trinh và Trưởng đoàn đàm phán Xuân Thủy", color: "primary" },
+                  { side: "CPCMLT miền Nam Việt Nam", lead: "Đại diện bởi Bộ trưởng Ngoại giao Nguyễn Thị Bình", color: "primary" },
+                  { side: "Hoa Kỳ", lead: "Đại diện bởi Bộ trưởng Ngoại giao William P. Rogers", color: "neutral" },
+                  { side: "Chính quyền Sài Gòn", lead: "Đại diện bởi Tổng trưởng Ngoại giao Trần Văn Lắm", color: "neutral" },
                 ].map((p, i) => (
                   <div
                     key={i}
@@ -196,7 +201,9 @@ export function PartOne() {
       <div className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
-            <SectionLabel number="02" label="Bối cảnh trước 1969" />
+            <h3 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
+              Bối cảnh 1968
+            </h3>
           </Reveal>
 
           <div className="mt-16 grid grid-cols-1 items-center gap-16 md:grid-cols-12">

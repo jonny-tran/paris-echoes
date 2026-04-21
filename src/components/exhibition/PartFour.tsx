@@ -102,9 +102,6 @@ export function PartFour() {
       {/* 4.3 Transformation map */}
       <div className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <SectionLabel number="08" label="Bước ngoặt chiến lược" />
-          </Reveal>
           <Reveal delay={100}>
             <h3 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
               "Đánh cho <span className="gradient-gold-text italic">Mỹ cút</span>"
@@ -182,22 +179,62 @@ export function PartFour() {
         </div>
       </div>
 
-      {/* 4.5 Closing quote */}
+      {/* 4.5 Bamboo diplomacy bridge */}
+      <div className="bg-surface py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal delay={100}>
+            <h3 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
+              "Ngoại giao <span className="gradient-gold-text italic">Cây tre</span>"<br />
+              từ Paris 1973 đến hiện tại
+            </h3>
+          </Reveal>
+
+          <div className="mt-16 grid auto-rows-[180px] grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[190px]">
+            <Reveal delay={140} className="md:col-span-3 md:row-span-2">
+              <div className="flex h-full flex-col justify-between bg-primary p-8 text-primary-foreground shadow-ambient md:p-10">
+                <span className="label-archival !text-tertiary-container">Gốc vững (Thực lực)</span>
+                <p className="text-headline text-2xl md:text-3xl">
+                  Thắng lợi tại Paris bắt nguồn từ thực lực trên chiến trường và ý chí độc lập dân tộc.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={260} className="md:col-span-3 md:row-span-1">
+              <div className="flex h-full flex-col justify-between bg-surface-bright p-8 shadow-ambient">
+                <span className="label-archival">Thân chắc (Bản lĩnh)</span>
+                <p className="text-headline text-xl ink-text md:text-2xl">
+                  Sự kiên định, can trường của những nhà ngoại giao như Lê Đức Thọ, Madame Bình.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={380} className="md:col-span-3 md:row-span-1">
+              <div className="flex h-full flex-col justify-between bg-ink p-8 text-primary-foreground shadow-ambient">
+                <span className="label-archival !text-tertiary-container">Cành uyển chuyển (Linh hoạt)</span>
+                <p className="text-headline text-xl md:text-2xl">
+                  Nghệ thuật "Dĩ bất biến, ứng vạn biến", "vừa đánh vừa đàm" để tranh thủ sự ủng hộ quốc tế.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={500} className="md:col-span-6">
+              <div className="bg-tertiary-container/40 p-8 shadow-ambient md:p-10">
+                <span className="label-archival !text-primary">Liên hệ thực tế</span>
+                <p className="text-headline mt-4 text-2xl ink-text md:text-3xl">
+                  Hiệp định Paris 1973 là mốc son chói lọi, đặt nền móng cho trường phái{" "}
+                  <span className="gradient-gold-text italic">"Ngoại giao Cây tre Việt Nam"</span> ở thời điểm hiện tại.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </div>
+
+      {/* 4.6 Closing quote */}
       <div className="gradient-lacquer py-32 text-primary-foreground md:py-44">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <Reveal>
-            <span className="text-display text-6xl gradient-gold-text">"</span>
-          </Reveal>
           <Reveal delay={150}>
             <p className="text-headline -mt-4 text-2xl italic md:text-4xl leading-snug">
               Hiệp định Paris là thắng lợi của trí tuệ Việt Nam,<br />
               của lương tri thời đại — và của một dân tộc<br />
               <span className="gradient-gold-text not-italic">không bao giờ chịu cúi đầu.</span>
-            </p>
-          </Reveal>
-          <Reveal delay={300}>
-            <p className="label-archival mt-12 !text-tertiary-container">
-              — Di sản hoà bình ·  Lưu trữ Quốc gia
             </p>
           </Reveal>
         </div>

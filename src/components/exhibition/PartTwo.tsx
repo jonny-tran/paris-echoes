@@ -165,7 +165,7 @@ export function PartTwo() {
       <div className="relative overflow-hidden gradient-lacquer py-32 md:py-40 text-primary-foreground">
         <div className="mx-auto max-w-5xl px-6 text-center">
           <Reveal>
-            <span className="label-archival !text-tertiary-container">Tổng kết Phần 2</span>
+            <span className="label-archival !text-tertiary-container">Tổng kết</span>
           </Reveal>
           <Reveal delay={120}>
             <p className="text-headline mt-10 text-3xl italic md:text-5xl">

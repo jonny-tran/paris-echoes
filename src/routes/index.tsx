@@ -6,17 +6,18 @@ import { PartTwo } from "@/components/exhibition/PartTwo";
 import { PartThree } from "@/components/exhibition/PartThree";
 import { PartFour } from "@/components/exhibition/PartFour";
 import { PartFive } from "@/components/exhibition/PartFive";
+import { PartSix } from "@/components/exhibition/PartSix";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hiệp định Paris 1969–1973 · The Diplomatic Archive" },
+      { title: "Hiệp định Paris 1969-1973" },
       {
         name: "description",
         content:
           "Triển lãm số cao cấp về Hiệp định Paris (1969–1973) — câu chuyện về cuộc đàm phán dài nhất thế kỷ XX và bản lĩnh ngoại giao Việt Nam.",
       },
-      { property: "og:title", content: "Hiệp định Paris 1969–1973 · The Diplomatic Archive" },
+      { property: "og:title", content: "Hiệp định Paris 1969-1973" },
       {
         property: "og:description",
         content:
@@ -38,6 +39,7 @@ function Index() {
       <PartThree />
       <PartFive />
       <PartFour />
+      <PartSix />
     </main>
   );
 }
