@@ -1,17 +1,12 @@
 import madameImg from "@/assets/madame-binh.jpg";
 import patternImg from "@/assets/pattern-clouds.jpg";
 import { Reveal } from "./Reveal";
-import { SectionLabel } from "./SectionLabel";
 
 export function PartFive() {
   return (
     <section id="part-5" className="relative bg-surface">
       {/* 5.1 Profile */}
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <Reveal>
-          <SectionLabel number="09" label="Phần 5 — Madame Bình" />
-        </Reveal>
-
         <div className="mt-12 grid grid-cols-1 items-center gap-12 md:grid-cols-12">
           <div className="relative md:col-span-5">
             <Reveal delay={100}>
@@ -69,9 +64,6 @@ export function PartFive() {
       {/* 5.2 Iron diplomat */}
       <div className="bg-surface-container py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <span className="label-archival">Khối 5.2 · Biểu tượng tà áo dài</span>
-          </Reveal>
           <Reveal delay={120}>
             <h3 className="text-display mt-8 text-[clamp(2.5rem,8vw,6rem)] ink-text">
               <span className="font-bold">"NHÀ NGOẠI GIAO</span><br />

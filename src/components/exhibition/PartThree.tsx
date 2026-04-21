@@ -1,6 +1,7 @@
 import lethoImg from "@/assets/le-duc-tho.jpg";
 import xuanthuyImg from "@/assets/xuan-thuy.jpg";
 import madameImg from "@/assets/madame-binh.jpg";
+import kissingerImg from "@/assets/henry_kissinger.jpg";
 import { Reveal } from "./Reveal";
 import { SectionLabel } from "./SectionLabel";
 
@@ -9,9 +10,6 @@ export function PartThree() {
     <section id="part-3" className="relative bg-surface">
       {/* 3.1 Dual stream */}
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <Reveal>
-          <SectionLabel number="04" label="Phần 3 — Chiến lược Việt Nam" />
-        </Reveal>
         <Reveal delay={100}>
           <h2 className="text-display mt-8 text-[clamp(2.5rem,7vw,5.5rem)] ink-text">
             CHIẾN LƯỢC<br />
@@ -143,7 +141,14 @@ export function PartThree() {
             <Reveal delay={380} className="md:col-span-3">
               <div>
                 <div className="aspect-square w-full max-w-sm bg-surface-highest/10 ghost-border flex items-center justify-center text-primary-foreground/40">
-                  <span className="text-display text-9xl">HK</span>
+                  <img
+                    src={kissingerImg}
+                    alt="Henry Kissinger"
+                    className="aspect-square w-full object-cover"
+                    loading="lazy"
+                    width={896}
+                    height={1280}
+                  />
                 </div>
                 <p className="text-display mt-6 text-3xl text-primary-foreground/90 md:text-4xl">
                   Henry Kissinger

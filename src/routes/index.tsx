@@ -36,8 +36,8 @@ function Index() {
       <PartOne />
       <PartTwo />
       <PartThree />
-      <PartFour />
       <PartFive />
+      <PartFour />
     </main>
   );
 }

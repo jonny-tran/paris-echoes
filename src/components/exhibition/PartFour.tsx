@@ -8,9 +8,6 @@ export function PartFour() {
     <section id="part-4" className="relative bg-surface-low">
       {/* 4.1 Bento grid */}
       <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <Reveal>
-          <SectionLabel number="07" label="Phần 4 — Ý nghĩa lịch sử" />
-        </Reveal>
         <Reveal delay={100}>
           <h2 className="text-display mt-8 text-[clamp(2.5rem,6vw,5rem)] ink-text">
             Chặng đường <span className="italic gradient-gold-text">5 năm</span><br />

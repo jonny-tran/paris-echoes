@@ -1,17 +1,12 @@
-import { Swords, Users, TrendingDown } from "lucide-react";
 import tetImg from "@/assets/tet-offensive.jpg";
 import protestsImg from "@/assets/protests.jpg";
 import { Reveal } from "./Reveal";
-import { SectionLabel } from "./SectionLabel";
 
 export function PartTwo() {
   return (
     <section id="part-2" className="relative bg-surface-low">
       {/* 2.1 Direct headline */}
       <div className="mx-auto max-w-6xl px-6 py-32 text-center md:py-40">
-        <Reveal>
-          <SectionLabel number="03" label="Phần 2 — Lối thoát duy nhất" className="justify-center" />
-        </Reveal>
         <Reveal delay={120}>
           <h2 className="text-display mx-auto mt-10 max-w-5xl text-[clamp(2.5rem,7vw,5.5rem)] ink-text">
             TẠI SAO MỸ PHẢI<br />
@@ -48,12 +43,6 @@ export function PartTwo() {
               </div>
             </Reveal>
             <div>
-              <Reveal delay={120}>
-                <div className="flex items-center gap-3">
-                  <Swords className="h-5 w-5 text-primary" />
-                  <span className="label-archival">Khối 2.2 · Quân sự</span>
-                </div>
-              </Reveal>
               <Reveal delay={180}>
                 <h3 className="text-headline mt-6 text-4xl ink-text md:text-5xl">
                   Thất bại quân sự:<br />
@@ -84,12 +73,6 @@ export function PartTwo() {
       {/* 2.3 Domestic — Editorial offset grid */}
       <div className="bg-surface-container py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <div className="flex items-center gap-3">
-              <Users className="h-5 w-5 text-primary" />
-              <span className="label-archival">Khối 2.3 · Mặt trận thứ hai</span>
-            </div>
-          </Reveal>
           <Reveal delay={120}>
             <h3 className="text-headline mt-6 max-w-4xl text-4xl ink-text md:text-6xl">
               Áp lực nội tại:<br />
@@ -139,12 +122,6 @@ export function PartTwo() {
       {/* 2.4 Economic — Card layout */}
       <div className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <div className="flex items-center gap-3">
-              <TrendingDown className="h-5 w-5 text-primary" />
-              <span className="label-archival">Khối 2.4 · Gót chân Achilles</span>
-            </div>
-          </Reveal>
           <Reveal delay={120}>
             <h3 className="text-headline mt-6 max-w-4xl text-4xl ink-text md:text-6xl">
               Khủng hoảng kinh tế:<br />
