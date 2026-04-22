@@ -156,23 +156,6 @@ export function PartFive() {
           </Reveal>
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-ink py-16 text-primary-foreground/70">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-            <div>
-              <p className="text-display text-2xl gradient-gold-text">The Diplomatic Archive</p>
-              <p className="label-archival mt-2 !text-tertiary-container/80">
-                Triển lãm số · Hiệp định Paris 1969–1973
-              </p>
-            </div>
-            <p className="font-serif text-sm italic opacity-70">
-              "Mỗi pixel được đặt bằng bàn tay của một sử gia."
-            </p>
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

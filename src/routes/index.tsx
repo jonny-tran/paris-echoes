@@ -7,6 +7,7 @@ import { PartThree } from "@/components/exhibition/PartThree";
 import { PartFour } from "@/components/exhibition/PartFour";
 import { PartFive } from "@/components/exhibition/PartFive";
 import { PartSix } from "@/components/exhibition/PartSix";
+// import { Part3D } from "@/components/exhibition/Part3D";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,6 +41,7 @@ function Index() {
       <PartFive />
       <PartFour />
       <PartSix />
+      {/* <Part3D /> */}
     </main>
   );
 }

@@ -1,5 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
+// Tạm tắt custom cursor (giữ component, bật lại khi ổn định)
+// import { CustomCursor } from "@/components/CustomCursor";
 import appCss from "../styles.css?url";
 import logoDcs from "@/assets/logo_DCS.jpg";
 
@@ -32,9 +34,9 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Hiệp định Paris 1969-1973" },
       { name: "description", content: "Projected Group 4 - VNR202 - FPTU HCMC" },
-      { name: "author", content: "Hiệp định Paris 1969-1973" },
+      { name: "author", content: "VNR202 - Team 4" },
       { property: "og:title", content: "Hiệp định Paris 1969-1973" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:description", content: "Hiệp định Paris 1969-1973" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "Hiệp định Paris 1969-1973" },
@@ -70,5 +72,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <>
+      {/* <CustomCursor /> */}
+      <Outlet />
+    </>
+  );
 }

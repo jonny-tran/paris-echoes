@@ -343,4 +343,10 @@
     transform: translateY(-4px);
     background-color: var(--surface-high);
   }
+
+  /* CustomCursor — ẩn con trỏ hệ thống khi component bật (class gắn bởi CustomCursor) */
+  html.hide-native-cursor,
+  html.hide-native-cursor * {
+    cursor: none !important;
+  }
 }

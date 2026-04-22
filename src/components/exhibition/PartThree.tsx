@@ -2,11 +2,10 @@ import lethoImg from "@/assets/le-duc-tho.jpg";
 import xuanthuyImg from "@/assets/xuan-thuy.jpg";
 import madameImg from "@/assets/madame-binh.jpg";
 import kissingerImg from "@/assets/henry_kissinger.jpg";
-import tetImg from "@/assets/tet-offensive.jpg";
+import dienbienphuImg from "@/assets/dien_bien_phu.jpg";
 import muadoImg from "@/assets/mua-do-7.jpg";
-import thanhCoQuangTri1972 from "@/assets/Thành_cổ_Quảng_Trị_4.jpg"
+import thanhCoQuangTri1972 from "@/assets/Thành_cổ_Quảng_Trị_4.jpg";
 import { Reveal } from "./Reveal";
-import { SectionLabel } from "./SectionLabel";
 
 export function PartThree() {
   return (
@@ -222,16 +221,8 @@ export function PartThree() {
         </div>
       </div>
 
-      {/* 3.5 Thực lực chiến trường */}
       <div className="bg-surface-container py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <Reveal delay={100}>
-            <h3 className="text-display mt-8 text-[clamp(2.1rem,6vw,4.4rem)] ink-text">
-              THỰC LỰC CHIẾN TRƯỜNG:<br />
-              <span className="gradient-gold-text">MỎ NEO CỦA NGOẠI GIAO</span>
-            </h3>
-          </Reveal>
-
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
             <Reveal delay={140}>
               <div className="relative overflow-hidden bg-surface-bright shadow-ambient">
@@ -287,6 +278,79 @@ export function PartThree() {
               </p>
             </div>
           </Reveal>
+        </div>
+      </div>
+
+      {/* 3.5 Điện Biên Phủ trên không */}
+      <div className="bg-surface-container py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <Reveal delay={100}>
+            <h3 className="text-display mt-8 text-[clamp(2.1rem,6vw,4.4rem)] ink-text">
+              12 NGÀY ĐÊM:<br />
+              <span className="gradient-gold-text">"ĐIỆN BIÊN PHỦ TRÊN KHÔNG"</span>
+            </h3>
+            <p className="mt-4 text-lg tracking-wide ink-soft">
+              18/12 - 30/12/1972
+            </p>
+          </Reveal>
+
+          <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
+            <Reveal delay={140}>
+              <div className="relative overflow-hidden bg-surface-bright shadow-ambient">
+                <img
+                  src={dienbienphuImg}
+                  alt="Tư liệu chiến dịch Điện Biên Phủ trên không"
+                  className="gold-spine aspect-[4/5] w-full object-cover grayscale"
+                  loading="lazy"
+                  width={1280}
+                  height={896}
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                  <p className="label-archival !text-tertiary-container">Tư liệu chiến dịch</p>
+                  <p className="mt-2 text-lg text-primary-foreground">
+                    Hà Nội - Hải Phòng đứng vững giữa cuộc tập kích chiến lược lớn nhất của không lực Hoa Kỳ.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={260}>
+              <div className="h-full space-y-6">
+                <div className="bg-primary p-6 text-primary-foreground shadow-ambient">
+                  <p className="label-archival !text-tertiary-container">Thông số chiến dịch</p>
+                  <ul className="mt-4 space-y-4 leading-relaxed">
+                    <li>
+                      <span className="text-display text-4xl text-tertiary">193</span>
+                      <p className="mt-1">
+                        máy bay B-52 ("Pháo đài bay") được huy động cùng hàng nghìn máy bay chiến thuật.
+                      </p>
+                    </li>
+                    <li className="border-t border-tertiary/30 pt-4">
+                      <span className="text-display text-4xl text-tertiary">36.000+</span>
+                      <p className="mt-1">
+                        tấn bom trút xuống Hà Nội, Hải Phòng - vượt khối lượng bom cả giai đoạn 1969-1971.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-surface-bright p-6 shadow-ambient">
+                  <h4 className="text-headline text-3xl ink-text md:text-4xl">Kết quả & Ý nghĩa</h4>
+                  <p className="mt-4 leading-relaxed ink-soft">
+                    Quân dân miền Bắc đập tan cuộc tập kích chiến lược, bắn rơi nhiều "siêu pháo đài" B-52, làm phá sản
+                    toan tính dùng hỏa lực để khuất phục ý chí Việt Nam.
+                  </p>
+                </div>
+
+                <div className="bg-ink p-6 text-primary-foreground shadow-ambient">
+                  <p className="text-headline text-2xl italic md:text-3xl">
+                    Cú chốt: làm tê liệt ý chí tiếp tục chiến tranh, buộc Mỹ quay lại bàn đàm phán với tâm thế thất bại
+                    hoàn toàn.
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>

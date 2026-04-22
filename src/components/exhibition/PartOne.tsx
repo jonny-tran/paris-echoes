@@ -73,12 +73,6 @@ export function PartOne() {
       <div id="part-1-grid" className="bg-surface-low py-24 md:py-32">
         <div className="mx-auto max-w-6xl px-6">
 
-          <Reveal delay={120}>
-            <h2 className="text-headline mt-6 text-4xl ink-text md:text-6xl">
-              Bốn bên — Một bàn đàm phán
-            </h2>
-          </Reveal>
-
           <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2">
             {/* Time block */}
             <Reveal>
@@ -116,10 +110,10 @@ export function PartOne() {
               <span className="label-archival">Bốn thành phần tham gia</span>
               <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
                 {[
-                  { side: "Việt Nam DCCH", lead: "Đại diện bởi Bộ trưởng Nguyễn Duy Trinh và Trưởng đoàn đàm phán Xuân Thủy", color: "primary" },
-                  { side: "CPCMLT miền Nam Việt Nam", lead: "Đại diện bởi Bộ trưởng Ngoại giao Nguyễn Thị Bình", color: "primary" },
-                  { side: "Hoa Kỳ", lead: "Đại diện bởi Bộ trưởng Ngoại giao William P. Rogers", color: "neutral" },
-                  { side: "Chính quyền Sài Gòn", lead: "Đại diện bởi Tổng trưởng Ngoại giao Trần Văn Lắm", color: "neutral" },
+                  { side: "Việt Nam DCCH",lead: "Bộ trưởng Xuân Thủy làm Trưởng đoàn và đồng chí Lê Đức Thọ làm Cố vấn", color: "primary" },
+                  { side: "CPCMLT miền Nam Việt Nam",lead: "Bộ trưởng Bộ Ngoại giao Nguyễn Thị Bình", color: "primary" },
+                  { side: "Hoa Kỳ", lead: "", color: "neutral" },
+                  { side: "Chính quyền Sài Gòn", lead: "", color: "neutral" },
                 ].map((p, i) => (
                   <div
                     key={i}
@@ -135,9 +129,6 @@ export function PartOne() {
                       {i + 1}
                     </div>
                     <h4 className="text-headline text-lg ink-text">{p.side}</h4>
-                    <p className="label-archival mt-3 font-sans !text-ink-soft transition-all duration-500 group-hover:!text-tertiary">
-                      Trưởng đoàn
-                    </p>
                     <p className="mt-1 font-serif italic ink-soft">{p.lead}</p>
                   </div>
                 ))}

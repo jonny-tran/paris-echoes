@@ -137,11 +137,6 @@ export function PartTwo() {
                 body: "Khoản chi khổng lồ gây thâm hụt ngân sách Mỹ nghiêm trọng, đè nặng lên nền kinh tế quốc gia.",
               },
               {
-                stat: "5.6%",
-                label: "Lạm phát phi mã",
-                body: "Đồng đô-la mất giá nhanh chóng, kinh tế Mỹ bắt đầu giai đoạn suy giảm kéo dài.",
-              },
-              {
                 stat: "∞",
                 label: "Cái giá vô hạn",
                 body: "Tiếp tục cuộc chiến đồng nghĩa với việc tự sát về kinh tế trong dài hạn.",
